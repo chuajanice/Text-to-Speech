@@ -1,0 +1,125 @@
+.layout {
+  width: 100%;
+
+  display: grid;
+  grid:
+    "header header header" auto
+    "footer footer footer" auto
+    / auto auto;
+  gap: 8px;
+}
+body {
+      font-family: Arial, sans-serif;
+      background: url("bg.jpg") no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 50px;
+      grid-area: body;
+      opacity: 0;          
+      transition: opacity 0.6s ease;
+}
+.on-page-2 {
+      font-family: Arial, sans-serif;
+      background: url("bg1.jpg") no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 50px;
+      grid-area: body;
+      opacity: 0;
+      transform: scale(0.9);          
+      transition: opacity 0.6s ease, transform 0.6s ease;
+}
+body.fade-in {
+  opacity: 1;           
+}
+header {
+  color: white;
+  text-decoration: none;
+  font-size: 100px;
+  font-weight: bold;
+  border-radius: 25px;
+  text-align: center;
+}
+.top-header {
+  background: url(bg1.jpg) no-repeat center center fixed;
+  background-size: cover;
+  grid-area: header;
+  padding: 50px;
+  text-align: top;
+  margin: none;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+a {
+    width: 50px;
+    padding: 13px 16px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+}
+.page-2 {
+    font-family:inherit ;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    background: url("bg.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+.page-2:hover {
+  text-decoration: underline;
+}
+.input-text {
+      width: 300px;
+      padding: 16px 16px;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+      outline: none;
+      font-size: 10px;
+      background: rgba(0, 0, 0, 0.5) url(bg.jpg) no-repeat center center fixed;
+      background-size: cover;
+      transition: 0.3s;
+}
+
+
+.input-box {
+      width: 50px;
+      padding: 13px 16px;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+      outline: none;
+      font-size: 12px;
+      background: rgba(0, 0, 0, 0.5) url(bg.jpg) no-repeat center center fixed;
+      background-size: cover;
+      transition: 0.3s;
+}
+.input-box:focus {
+      border-color: #4a90e2;
+      box-shadow: 0 0 6px rgba(74, 144, 226, 0.5);
+}
+.back-button {
+      font-family:inherit ;
+      color: black;
+      font-weight: bold;
+      font-size: 15px;
+      background: url("bg.jpg") no-repeat center center fixed;
+      background-size: cover;
+}
+.back-button:hover {
+  text-decoration: underline;
+}
+footer {
+      position: fixed;      
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      font-size: 12pt;
+      font-family: initial;
+}
+
+
